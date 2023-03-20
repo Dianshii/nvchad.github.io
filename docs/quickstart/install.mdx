@@ -1,26 +1,27 @@
 import OS_Selector from "../../src/components/docpage/install.tsx";
 
-## Pre-requisites
+## 前提条件
 
-- [Neovim 0.8.3](https://github.com/neovim/neovim/releases/tag/v0.8.0).
-- [Nerd Font](https://www.nerdfonts.com/) Set it in your terminal emulator.
-  - Make sure the nerd font you set doesnt end with <strong>Mono</strong> to prevent small icons. 
-   - <strong>Example : </strong> Iosevka Nerd Font and not <s>Iosevka Nerd Font Mono</s>
+- [Neovim 0.8.3](https://github.com/neovim/neovim/releases/tag/v0.8.0)。
+- 在终端模拟器内设置了 [Nerd Font](https://www.nerdfonts.com/) 字体。
+  - 确认你使用的 nerd font 字体不是以 <strong>Mono</strong> 结尾，以防图标过小。
+   - <strong>例如：</strong> Iosevka Nerd Font ，而不是 <s>Iosevka Nerd Font Mono</s>
 - [Ripgrep](https://github.com/BurntSushi/ripgrep) is required for grep searching with Telescope <strong>(OPTIONAL)</strong>. 
-- GCC, Windows users must have [`mingw`](http://mingw-w64.org/downloads) installed and set on path.
-- Delete old neovim folder (check commands below)
+- 如需使用 Telescope grep 搜索，则需安装 [Ripgrep](https://github.com/BurntSushi/ripgrep)<strong>（可选）</strong>。
+- GCC 和 Windows 用户必须已安装 [`mingw`](http://mingw-w64.org/downloads) 并配置环境变量。
+- 删除已有的 neovim文件夹（参考以下指令）。
 
-## Install
+## 安装
 
 <OS_Selector/>
 
-## Update
+## 更新
 
-To update NvChad run the following command : 
+用以下指令更新NvChad：
 
 - `NvChadUpdate`.
 
-## Uninstall
+## 卸载
 ```bash
 # linux/macos (unix)
 rm -rf ~/.config/nvim
